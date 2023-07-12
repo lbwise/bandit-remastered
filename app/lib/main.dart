@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:app/match_description.dart';
 import 'package:app/navigation_bar.dart';
+import 'package:app/profile_carousel.dart';
 
 void main() {
   runApp(
@@ -12,6 +13,7 @@ void main() {
             children: [
               MatchDescription(),
               NavBar(),
+              ProfileCarousel(),
             ],
           ),
         ),
