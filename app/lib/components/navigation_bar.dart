@@ -31,7 +31,7 @@ class _NavBarState extends State<NavBar> {
           return Padding(
             padding: const EdgeInsets.only(bottom: 12, left: 8, right: 8),
             child: Container(
-              constraints: const BoxConstraints(minHeight: 100),
+              constraints: const BoxConstraints(maxHeight: 80),
               height: availableHeight,
               child: Align(
                 alignment: Alignment.bottomCenter,
@@ -59,7 +59,7 @@ class _NavBarState extends State<NavBar> {
                             child: TextButton(
                               onPressed: () => onNavClick(0),
                               child: SvgPicture.asset(
-                                'assets/images/heart-regular.svg',
+                                'assets/icons/heart-regular.svg',
                                 color: Colors.white,
                               ),
                             ),
@@ -74,7 +74,7 @@ class _NavBarState extends State<NavBar> {
                             child: TextButton(
                               onPressed: () => onNavClick(1),
                               child: SvgPicture.asset(
-                                'assets/images/drum-solid.svg',
+                                'assets/icons/drum-solid.svg',
                                 color: Colors.white,
                               ),
                             ),
@@ -89,7 +89,7 @@ class _NavBarState extends State<NavBar> {
                             child: TextButton(
                               onPressed: () => onNavClick(2),
                               child: SvgPicture.asset(
-                                'assets/images/message-regular.svg',
+                                'assets/icons/message-regular.svg',
                                 color: Colors.white,
                               ),
                             ),
@@ -104,7 +104,7 @@ class _NavBarState extends State<NavBar> {
                             child: TextButton(
                               onPressed: () => onNavClick(3),
                               child: SvgPicture.asset(
-                                'assets/images/user-regular.svg',
+                                'assets/icons/user-regular.svg',
                                 color: Colors.white,
                               ),
                             ),

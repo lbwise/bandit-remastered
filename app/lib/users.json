@@ -1,0 +1,170 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "band": false,
+            "name": "timothy greg",
+            "created": "04-04-2023",
+            "presets": { 
+               "confidence": 7,
+               "location": 8,
+               "age": 4,
+               "genre": 5
+            },
+            "age": 40,
+            "artist_type": "producer",
+            "seeking": [
+                "band"
+            ],
+            "location": {
+                "latitude": 300,
+                "longitude": 300
+            },
+            "artists": [
+                "michael jackson",
+                "mf doom",
+                "drake",
+                "the blind guy"
+            ],
+            "requests": [
+                2,
+                3 
+            ],
+            "matches": [
+                4
+            ]
+        },
+        { 
+            "id": 2,
+            "band": false,
+            "name": "Tammy Green",
+            "created": "11-05-2021",
+            "presets": { 
+               "confidence": 4,
+               "location": 4,
+               "age": 9,
+               "genre": 6
+            },
+            "age": 65,
+            "artist_type": "drummer",
+            "seeking": [
+                "produced",
+                "flutist"
+            ],
+            "location": {
+                "latitude": 8000,
+                "longitude": 120.43 
+            },
+            "artists": [
+                "amy whinehouse",
+                "stevie ray vaughn"
+            ],
+            "requests": [
+            ],
+            "matches": [
+                2
+            ]
+        },
+        { 
+            "id": 3,
+            "band": true,
+            "name": "Oscar Dylan",
+            "created": "02-10-2022",
+            "presets": { 
+               "confidence": 5,
+               "location": 2,
+               "age": 6,
+               "genre": 8
+            },
+            "age": 21,
+            "artist_type": "band",
+            "seeking": [
+                "bassist"
+            ],
+            "location": {
+                "latitude": 0,
+                "longitude": 0
+            },
+            "artists": [
+                "pink floyd",
+                "oasis",
+                "red hot chilli peppers"
+            ],
+            "requests": [
+                1,
+                4,
+                5
+            ],
+            "matches": [
+            ]
+        },
+        { 
+            "id": 4,
+            "band": false,
+            "name": "Sam Sloan",
+            "created": "08-06-2022",
+            "presets": { 
+               "confidence": 3,
+               "location": 2,
+               "age": 7,
+               "genre": 6
+            },
+            "age": 35,
+            "artist_type": "bassist",
+            "seeking": [
+                "band"
+            ],
+            "location": {
+                "latitude": 320,
+                "longitude": 2000
+            },
+            "artists": [
+                "kendrick lamar",
+                "david bowie",
+                "dijon"
+            ],
+            "requests": [
+                2,
+                3
+            ],
+            "matches": [
+                1
+            ]
+        },
+        { 
+            "id": 5,
+            "band": true,
+            "name": "Death Riders",
+            "created": "03-04-2020",
+            "presets": { 
+               "confidence": 8,
+               "location": 4,
+               "age": 7,
+               "genre": 6
+            },
+            "age": 24,
+            "artist_type": "band",
+            "seeking": [
+                "percussionist",
+                "lead guitar",
+                "producer"
+            ],
+            "location": {
+                "latitude": 8200,
+                "longitude": 359.22 
+            },
+            "artists": [
+                "dire straits",
+                "pearl jam",
+                "tribe called quest"
+            ],
+            "requests": [
+                3
+            ],
+            "matches": [
+                2,
+                1
+            ]
+        }
+    ]
+}
