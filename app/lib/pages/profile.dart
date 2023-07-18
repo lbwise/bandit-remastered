@@ -8,8 +8,9 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        ProfileCarousel(),
-        MatchDescription(),
+       // ProfileCarousel(),
+        //MatchDescription(),
+        Text("Testing"),
       ], 
     );
   }

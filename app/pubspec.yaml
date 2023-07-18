@@ -28,9 +28,13 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  http: ^1.1.0
   flutter:
     sdk: flutter
   flutter_svg: any
+
+  google_fonts: ^5.1.0
+
 
   
 
@@ -75,6 +79,7 @@ flutter:
     - assets/profile_images/lucia-macedo-d9_2kPJBG0U-unsplash.png 
     - assets/profile_images/singer-media.png 
     - assets/profile_images/violin-media.png
+    - assets/noise_texture.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

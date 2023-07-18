@@ -1,72 +1,60 @@
 import 'package:flutter/material.dart';
-
-class User {
-  String name;
-  int age;
-  String instrument;
-  String seeking = 'band';
-  int distance = 20;
-
-  User(this.name, this.age, this.instrument);
-}
+import 'package:app/models/user.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:app/pages/home.dart';
 
 class MatchDescription extends StatefulWidget {
+  const MatchDescription(this.user, {super.key});
 
-    const MatchDescription({super.key});
-    @override
-    State<MatchDescription> createState() {
-        return _MatchDescriptionState();
-    }
+  final User user;
+
+  @override
+  State<MatchDescription> createState() {
+    return _MatchDescriptionState();
+  }
 }
 
 class _MatchDescriptionState extends State<MatchDescription> {
-    @override
-    Widget build(context) {
-
-      var user = User('Sam', 32, 'Guitarist');
-      return Container(
+  @override
+  Widget build(context) {
+    print(widget.user.name);
+    return Container(
         width: 345,
-        color: const Color(0x338A8A8A),
-        // decoration: BoxDecoration(
-        //     border: Border.all(color: Colors.white)
-        // ),
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Text('${user.name} ${user.age}'),
-                Text(
-                  user.instrument,
-                  style: const TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ]
+        alignment: Alignment.center,
+        margin: const EdgeInsets.only(top: 100),
+        padding: const EdgeInsets.only(top: 20, bottom: 20, left: 10, right: 10),
+        decoration: BoxDecoration(
+            color: const Color.fromARGB(96, 39, 122, 60),
+            border: Border.all(
+              color: const Color.fromARGB(0, 39, 122, 60),
             ),
-            Row(
-              children: [
-                const Text('Looking for a '),
-                Text(
-                  user.seeking,
-                  style: const TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ]
+            borderRadius: const BorderRadius.all(Radius.circular(15))),
+        child: Column(children: [
+          Row(children: [
+            Text('${widget.user.name} ${widget.user.age}'),
+            Text(
+              widget.user.instrument,
+              style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.amber),
             ),
-            Row(
-              children: [
-                const Text('Within '),
-                Text(
-                  '${user.distance}km',
-                  style: const TextStyle(fontWeight: FontWeight.bold),
-                ),
-                const Text(' of you'),
-              ]
+          ]),
+          Row(children: [
+            const Text('Looking for a '),
+            Text(
+              widget.user.seeking,
+              style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.amber),
             ),
-            const Row(
-              children: [
-                Text('Likes similar artists:'),
-              ]
+          ]),
+          Row(children: [
+            const Text('Within '),
+            Text(
+              '${widget.user.distance}km',
+              style: const TextStyle(fontWeight: FontWeight.bold,  color: Colors.amber),
             ),
-          ]
-        )
-      );
+            const Text(' of you'),
+          ]),
+          const Row(children: [
+            Text('Likes similar artists:'),
+          ]),
+        ]));
   }
 }
